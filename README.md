@@ -7,31 +7,28 @@
 
 ## 📌 Project Overview
 
-This project demonstrates how to manage a project using **Git and GitHub** by implementing version control, feature branching, commits, pull requests, merging, repository documentation, and release tagging.
-
-The project follows a structured Git workflow to maintain organized development, track changes, and improve collaboration.
+This project demonstrates Git and GitHub best practices for DevOps project management, including repository management, branching, commits, pull requests, merge workflows, `.gitignore`, documentation, and release tagging.
 
 ## 🎯 Project Objectives
 
-- Understand Git fundamentals and version control.
-- Create and manage multiple Git branches.
-- Follow a feature-branch development strategy.
-- Track project changes through meaningful commits.
-- Create and review GitHub Pull Requests (PRs).
-- Merge feature branches into development and main branches.
-- Use `.gitignore` to exclude unnecessary files.
-- Organize project documentation and screenshots.
-- Create and manage Git release tags.
+- 📁 Manage a Git repository.
+- 🌿 Use `main`, `dev`, and feature branches.
+- 🔀 Review and merge changes using Pull Requests.
+- 📝 Write meaningful commit messages.
+- 🚫 Configure `.gitignore`.
+- 📚 Maintain Markdown documentation.
+- 🏷️ Use Git tags for release versioning.
+- 📸 Document implementation with screenshots.
 
 ## 🛠️ Technologies and Tools
 
 | Tool | Purpose |
 |---|---|
-| Git | Version control and change tracking |
-| GitHub | Remote repository hosting and collaboration |
-| Git Bash / Ubuntu WSL | Command-line Git operations |
-| Markdown | Project documentation |
-| Git Tags | Version and release management |
+| Git | Version control |
+| GitHub | Remote repository and Pull Requests |
+| Ubuntu on WSL | Development environment |
+| Markdown | Documentation |
+| Git tags | Release versioning |
 
 ## 🌿 Git Branching Strategy
 
@@ -58,17 +55,41 @@ This project uses a feature-branch workflow.
 ## 📂 Project Structure
 
 ```text
+main
+└── dev
+    ├── feature/project-documentation
+    ├── feature/gitignore-setup
+    ├── feature/add-screenshots-folder
+    ├── feature/add-project-screenshots
+    └── feature/professional-readme
+```
+
+- 🟢 **main:** Stable project branch.
+- 🔵 **dev:** Integration branch.
+- 🧩 **feature branches:** Individual changes and improvements.
+
+## ⚙️ Project Workflow
+
+1. Created and cloned the GitHub repository.
+2. Created development and feature branches.
+3. Added project documentation.
+4. Configured `.gitignore`.
+5. Committed and pushed changes.
+6. Created and reviewed Pull Requests.
+7. Merged approved changes into the relevant branches.
+8. Created and pushed the `v1.0.0` tag.
+9. Added screenshots as project evidence.
+
+## 📁 Repository Structure
+
+```text
 version-controlled-devops-project-Elevate-Labs/
-│
-├── .gitignore
 ├── README.md
-│
+├── .gitignore
 ├── docs/
 │   ├── git-workflow.md
 │   └── task-log.md
-│
 └── Screenshots/
-    ├── README.md
     ├── 01-github-repository.PNG
     ├── 02-git-branches.PNG
     ├── 03-merged-pull-requests.PNG
@@ -76,14 +97,11 @@ version-controlled-devops-project-Elevate-Labs/
     ├── 05-gitignore.PNG
     ├── 06-task-documentation.PNG
     ├── 07-release-tag.PNG
-    └── 08-final-verification.PNG
+    ├── 08-final-verification.PNG
+    └── README.md
 ```
 
-*Note: The structure above represents the intended project layout. Keep only paths and filenames that actually exist in your repository.*
-
 ## 📸 Project Screenshots
-
-The following screenshots document the project setup, Git workflow, pull requests, commits, and release verification.
 
 ### 1️⃣ GitHub Repository
 
@@ -122,84 +140,53 @@ The following screenshots document the project setup, Git workflow, pull request
 ### Initialize and Clone
 
 ```bash
-git init
-git clone <repository-url>
+# Check repository status
+git status
+
+# List local and remote branches
+git branch -a
+
+# Switch branches
+git switch dev
+
+# Create a feature branch
+git switch -c feature/my-change
+
+# Stage and commit changes
+git add .
+git commit -m "docs: update project documentation"
+
+# Push a feature branch
+git push -u origin feature/my-change
+
+# View commit history
+git log --oneline --graph --all
+
+# List release tags
+git tag
 ```
 
 ### Check Repository Status
 
-```bash
-git status
-git branch
-git log --oneline
-```
-
-### Create and Switch Branches
-
-```bash
-git switch dev
-git switch -c feature/new-feature
-```
-
-### Stage and Commit Changes
-
-```bash
-git add .
-git commit -m "feat: add new feature"
-```
-
-### Push a Branch to GitHub
-
-```bash
-git push -u origin feature/new-feature
-```
-
-### Pull Latest Changes
-
-```bash
-git pull origin dev
-```
-
-### Merge a Feature Branch
-
-```bash
-git switch dev
-git merge feature/new-feature
-```
-
-### Create a Release Tag
-
-```bash
-git tag -a v1.0.0 -m "Version 1.0.0"
-git push origin v1.0.0
-```
-
-*Note: Create a tag only if it does not already exist. The project already has a `v1.0.0` tag.*
-
-## 📚 Documentation
-
-- [Git Workflow](docs/git-workflow.md)
-- [Task Log](docs/task-log.md)
-- [Project Screenshots](Screenshots/)
+- 📖 [Git Workflow](docs/git-workflow.md)
+- ✅ [Task Log](docs/task-log.md)
+- 📸 [Screenshots](Screenshots/)
 
 ## 🏷️ Release Information
 
-- **Release Version:** `v1.0.0`
-- **Versioning Tool:** Git Tags
-- **Repository Status:** Managed using Git and GitHub
+- **Version:** `v1.0.0`
+- **Release type:** Initial project release
+- **Release branch:** `main`
 
 ## 🎓 Key Learnings
 
-Through this project, I practiced:
-
-- Git version control and repository management.
-- Branch creation, switching, and merging.
-- Feature-based development workflows.
-- Commit history tracking and meaningful commit messages.
-- GitHub Pull Requests and merge-conflict resolution.
+- Git branching and merging.
+- Remote repository management.
+- Pull Request reviews and conflict resolution.
+- Commit history inspection.
 - `.gitignore` configuration.
 - Markdown documentation.
-- Release tagging and project verification.
+- Version tagging.
 
 ## 👩‍💻 Author
 
@@ -207,12 +194,8 @@ Through this project, I practiced:
 
 GitHub Profile: [@ruchi1792](https://github.com/ruchi1792)
 
-## ⭐ Conclusion
-
-This project demonstrates a practical Git and GitHub workflow for managing development changes, organizing documentation, collaborating through Pull Requests, and maintaining a structured repository.
-
-If you find this project useful, feel free to explore the repository and its documentation.
+[GitHub Profile](https://github.com/ruchi1792)
 
 ---
 
-**Built as part of DevOps hands-on practice.** 🚀
+⭐ Explore the repository and its documentation to learn more about the project.
