@@ -47,7 +47,7 @@ main
 
 - 🟢 **`main`** — Stable project branch.
 - 🔵 **`dev`** — Integration branch for reviewed changes.
-- 🧩 **`feature/*`** — Separate branches for individual tasks.
+- 🧩 **`feature/*`** — Branches for individual tasks.
 
 Feature branches are merged through Pull Requests. The development branch is then merged into `main` through a release Pull Request.
 
