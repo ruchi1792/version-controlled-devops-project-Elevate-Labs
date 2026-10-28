@@ -1,17 +1,15 @@
 # 🚀 Version-Controlled DevOps Project with Git & GitHub
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/GitHub-Repository-181717?logo=github&logoColor=white" alt="GitHub"/>
-  <img src="https://img.shields.io/badge/Release-v1.0.0-blue" alt="Release v1.0.0"/>
-  <img src="https://img.shields.io/badge/Status-Completed-success" alt="Project Status"/>
-</p>
+![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Collaboration-181717?logo=github&logoColor=white)
+![DevOps](https://img.shields.io/badge/Domain-DevOps-blue)
+![Release](https://img.shields.io/badge/Release-v1.0.0-success)
 
 ## 📌 Project Overview
 
 This project demonstrates Git and GitHub best practices for DevOps project management, including repository management, branching, commits, pull requests, merge workflows, `.gitignore`, documentation, and release tagging.
 
-## 🎯 Objectives
+## 🎯 Project Objectives
 
 - 📁 Manage a Git repository.
 - 🌿 Use `main`, `dev`, and feature branches.
@@ -22,7 +20,7 @@ This project demonstrates Git and GitHub best practices for DevOps project manag
 - 🏷️ Use Git tags for release versioning.
 - 📸 Document implementation with screenshots.
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies and Tools
 
 | Tool | Purpose |
 |---|---|
@@ -32,7 +30,29 @@ This project demonstrates Git and GitHub best practices for DevOps project manag
 | Markdown | Documentation |
 | Git tags | Release versioning |
 
-## 🌳 Branching Strategy
+## 🌿 Git Branching Strategy
+
+This project uses a feature-branch workflow.
+
+| Branch | Purpose |
+|---|---|
+| `main` | Stable project version |
+| `dev` | Development and integration branch |
+| `feature/*` | Individual features, changes, and documentation tasks |
+
+### 🔄 Workflow
+
+1. Create a feature branch from `dev`.
+2. Make changes to the project files.
+3. Stage and commit the changes.
+4. Push the feature branch to GitHub.
+5. Open a Pull Request from the feature branch into `dev`.
+6. Review and merge the Pull Request.
+7. Open another Pull Request from `dev` into `main`.
+8. Merge approved changes into `main`.
+9. Tag a stable version using Git tags.
+
+## 📂 Project Structure
 
 ```text
 main
@@ -99,23 +119,25 @@ version-controlled-devops-project-Elevate-Labs/
 
 ![Git Commit History](Screenshots/04-git-commit-history.PNG)
 
-### 5️⃣ `.gitignore` Configuration
+### 5️⃣ Git Ignore Configuration
 
-![Gitignore Configuration](Screenshots/05-gitignore.PNG)
+![Git Ignore](Screenshots/05-gitignore.PNG)
 
-### 6️⃣ Task Documentation
+### 6️⃣ Project Documentation
 
-![Task Documentation](Screenshots/06-task-documentation.PNG)
+![Project Documentation](Screenshots/06-task-documentation.PNG)
 
-### 7️⃣ Release Tag — v1.0.0
+### 7️⃣ Git Release Tag
 
-![Release Tag](Screenshots/07-release-tag.PNG)
+![Git Release Tag](Screenshots/07-release-tag.PNG)
 
 ### 8️⃣ Final Verification
 
 ![Final Verification](Screenshots/08-final-verification.PNG)
 
 ## 💻 Useful Git Commands
+
+### Initialize and Clone
 
 ```bash
 # Check repository status
@@ -144,7 +166,7 @@ git log --oneline --graph --all
 git tag
 ```
 
-## 📚 Project Documentation
+### Check Repository Status
 
 - 📖 [Git Workflow](docs/git-workflow.md)
 - ✅ [Task Log](docs/task-log.md)
@@ -170,7 +192,7 @@ git tag
 
 **Ruchita Deshmukh**
 
-Cloud & DevOps Enthusiast
+GitHub Profile: [@ruchi1792](https://github.com/ruchi1792)
 
 [GitHub Profile](https://github.com/ruchi1792)
 
