@@ -9,7 +9,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates how to manage a DevOps project using **Git and GitHub best practices**. It covers repository management, branching strategies, meaningful commits, pull requests, merge workflows, `.gitignore` configuration, Markdown documentation, and release tagging.
+This project demonstrates Git and GitHub best practices for managing a DevOps project. It covers repository management, branching strategies, meaningful commits, pull requests, merge workflows, `.gitignore` configuration, Markdown documentation, and release tagging.
 
 The goal is to maintain a structured, traceable, and collaborative development workflow.
 
@@ -38,11 +38,11 @@ The goal is to maintain a structured, traceable, and collaborative development w
 
 ```text
 main
- └── dev
-      ├── feature/project-documentation
-      ├── feature/gitignore-setup
-      ├── feature/add-screenshots-folder
-      └── feature/add-project-screenshots
+└── dev
+    ├── feature/project-documentation
+    ├── feature/gitignore-setup
+    ├── feature/add-screenshots-folder
+    └── feature/add-project-screenshots
 ```
 
 - 🟢 **`main`** — Stable project branch.
@@ -62,6 +62,27 @@ Feature branches are merged through Pull Requests. The development branch is the
 7. 🔀 Merged approved changes into `dev` and `main`.
 8. 🏷️ Created and pushed the annotated `v1.0.0` tag.
 9. 📸 Added screenshots as project evidence.
+
+## 📁 Repository Structure
+
+```text
+version-controlled-devops-project-Elevate-Labs/
+├── README.md
+├── .gitignore
+├── docs/
+│   ├── git-workflow.md
+│   └── task-log.md
+└── Screenshots/
+    ├── 01-github-repository.PNG
+    ├── 02-git-branches.PNG
+    ├── 03-merged-pull-requests.PNG
+    ├── 04-git-commit-history.PNG
+    ├── 05-gitignore.PNG
+    ├── 06-task-documentation.PNG
+    ├── 07-release-tag.PNG
+    ├── 08-final-verification.PNG
+    └── README.md
+```
 
 ## 📸 Project Screenshots
 
@@ -142,7 +163,7 @@ git tag
 - **Version:** `v1.0.0`
 - **Release type:** Initial project release
 - **Release tag:** `v1.0.0`
-- **Branch:** `main`
+- **Release branch:** `main`
 
 ## 🎓 Key Learnings
 
