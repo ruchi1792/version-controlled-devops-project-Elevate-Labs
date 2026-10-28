@@ -9,63 +9,79 @@
 
 ## 📌 Project Overview
 
-This project demonstrates how to manage a DevOps project using **Git and GitHub best practices**. It covers repository management, branching strategies, meaningful commits, pull requests, merge workflows, `.gitignore` configuration, Markdown documentation, and release tagging.
-
-The goal is to maintain a structured, traceable, and collaborative development workflow.
+This project demonstrates Git and GitHub best practices for DevOps project management, including repository management, branching, commits, pull requests, merge workflows, `.gitignore`, documentation, and release tagging.
 
 ## 🎯 Objectives
 
-- 📁 Initialize and manage a Git repository.
-- 🌿 Create and manage `main`, `dev`, and feature branches.
-- 🔀 Use GitHub Pull Requests to review and merge changes.
-- 📝 Maintain meaningful commit messages.
-- 🚫 Configure `.gitignore` for unnecessary and sensitive local files.
-- 📚 Document tasks and workflows using Markdown.
-- 🏷️ Create and publish an annotated Git release tag.
-- 📸 Capture project implementation evidence.
+- 📁 Manage a Git repository.
+- 🌿 Use `main`, `dev`, and feature branches.
+- 🔀 Review and merge changes using Pull Requests.
+- 📝 Write meaningful commit messages.
+- 🚫 Configure `.gitignore`.
+- 📚 Maintain Markdown documentation.
+- 🏷️ Use Git tags for release versioning.
+- 📸 Document implementation with screenshots.
 
 ## 🛠️ Technologies Used
 
 | Tool | Purpose |
 |---|---|
-| Git | Version control and commit history |
-| GitHub | Remote repository and pull requests |
-| Ubuntu on WSL | Linux development environment |
-| Markdown | Project documentation |
+| Git | Version control |
+| GitHub | Remote repository and Pull Requests |
+| Ubuntu on WSL | Development environment |
+| Markdown | Documentation |
 | Git tags | Release versioning |
 
 ## 🌳 Branching Strategy
 
 ```text
 main
- └── dev
-      ├── feature/project-documentation
-      ├── feature/gitignore-setup
-      ├── feature/add-screenshots-folder
-      └── feature/add-project-screenshots
+└── dev
+    ├── feature/project-documentation
+    ├── feature/gitignore-setup
+    ├── feature/add-screenshots-folder
+    ├── feature/add-project-screenshots
+    └── feature/professional-readme
 ```
 
-- 🟢 **`main`** — Stable project branch.
-- 🔵 **`dev`** — Integration branch for reviewed changes.
-- 🧩 **`feature/*`** — Separate branches for individual tasks.
-
-Feature branches are merged through Pull Requests. The development branch is then merged into `main` through a release Pull Request.
+- 🟢 **main:** Stable project branch.
+- 🔵 **dev:** Integration branch.
+- 🧩 **feature branches:** Individual changes and improvements.
 
 ## ⚙️ Project Workflow
 
-1. 📥 Created a GitHub repository and cloned it locally.
-2. 🌿 Set up development and feature branches.
-3. ✍️ Added project documentation and meaningful commits.
-4. 🚫 Configured `.gitignore` rules.
-5. ☁️ Pushed feature branches to GitHub.
-6. 🔍 Created and reviewed Pull Requests.
-7. 🔀 Merged approved changes into `dev` and `main`.
-8. 🏷️ Created and pushed the annotated `v1.0.0` tag.
-9. 📸 Added screenshots as project evidence.
+1. Created and cloned the GitHub repository.
+2. Created development and feature branches.
+3. Added project documentation.
+4. Configured `.gitignore`.
+5. Committed and pushed changes.
+6. Created and reviewed Pull Requests.
+7. Merged approved changes into the relevant branches.
+8. Created and pushed the `v1.0.0` tag.
+9. Added screenshots as project evidence.
+
+## 📁 Repository Structure
+
+```text
+version-controlled-devops-project-Elevate-Labs/
+├── README.md
+├── .gitignore
+├── docs/
+│   ├── git-workflow.md
+│   └── task-log.md
+└── Screenshots/
+    ├── 01-github-repository.PNG
+    ├── 02-git-branches.PNG
+    ├── 03-merged-pull-requests.PNG
+    ├── 04-git-commit-history.PNG
+    ├── 05-gitignore.PNG
+    ├── 06-task-documentation.PNG
+    ├── 07-release-tag.PNG
+    ├── 08-final-verification.PNG
+    └── README.md
+```
 
 ## 📸 Project Screenshots
-
-The following evidence is stored in the [`Screenshots/`](Screenshots/) directory.
 
 ### 1️⃣ GitHub Repository
 
@@ -97,21 +113,18 @@ The following evidence is stored in the [`Screenshots/`](Screenshots/) directory
 
 ### 8️⃣ Final Verification
 
-![Final Git Verification](Screenshots/08-final-verification.PNG)
+![Final Verification](Screenshots/08-final-verification.PNG)
 
 ## 💻 Useful Git Commands
 
 ```bash
-# Clone the repository
-git clone https://github.com/ruchi1792/version-controlled-devops-project-Elevate-Labs.git
-
 # Check repository status
 git status
 
-# List branches
+# List local and remote branches
 git branch -a
 
-# Switch to the development branch
+# Switch branches
 git switch dev
 
 # Create a feature branch
@@ -119,12 +132,12 @@ git switch -c feature/my-change
 
 # Stage and commit changes
 git add .
-git commit -m "docs: describe project changes"
+git commit -m "docs: update project documentation"
 
 # Push a feature branch
 git push -u origin feature/my-change
 
-# Review commit history
+# View commit history
 git log --oneline --graph --all
 
 # List release tags
@@ -135,24 +148,23 @@ git tag
 
 - 📖 [Git Workflow](docs/git-workflow.md)
 - ✅ [Task Log](docs/task-log.md)
-- 📸 [Project Screenshots](Screenshots/)
+- 📸 [Screenshots](Screenshots/)
 
 ## 🏷️ Release Information
 
 - **Version:** `v1.0.0`
 - **Release type:** Initial project release
-- **Release tag:** `v1.0.0`
-- **Branch:** `main`
+- **Release branch:** `main`
 
 ## 🎓 Key Learnings
 
-- Understanding Git branching and merging.
-- Managing remote repositories with GitHub.
-- Using Pull Requests for controlled integration.
-- Maintaining a readable commit history.
-- Excluding unnecessary files with `.gitignore`.
-- Documenting technical work using Markdown.
-- Applying Git tags for release identification.
+- Git branching and merging.
+- Remote repository management.
+- Pull Request reviews and conflict resolution.
+- Commit history inspection.
+- `.gitignore` configuration.
+- Markdown documentation.
+- Version tagging.
 
 ## 👩‍💻 Author
 
@@ -160,8 +172,8 @@ git tag
 
 Cloud & DevOps Enthusiast
 
-🔗 [GitHub Profile](https://github.com/ruchi1792)
+[GitHub Profile](https://github.com/ruchi1792)
 
 ---
 
-⭐ If you find this project useful, feel free to explore the repository and its documentation.
+⭐ Explore the repository and its documentation to learn more about the project.
